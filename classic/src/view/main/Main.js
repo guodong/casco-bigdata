@@ -78,7 +78,6 @@ Ext.define('bigdata.view.main.Main', {
     items: [{
         title: 'Home',
         iconCls: 'fa-home',
-        // The following grid shares a store with the classic version's grid as well!
         items: [{
             xtype: 'mainlist'
         }]
@@ -91,11 +90,13 @@ Ext.define('bigdata.view.main.Main', {
         	title:'电气特性长期跟踪',
         }]
     }, {
-        title: 'Groups',
+        title: '分析结果',
         iconCls: 'fa-users',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        xtype: 'tabpanel',
+        items: [{
+        	xtype: 'result.report',
+        	title:'分析结果',
+        }]
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',

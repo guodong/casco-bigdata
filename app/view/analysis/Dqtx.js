@@ -1,4 +1,4 @@
-Ext.define('Myapp.view.main.Dqtx', {
+Ext.define('Myapp.view.analysis.Dqtx', {
 	extend: 'Ext.panel.Panel',
 	xtype: 'analysis.dqtx',
 	layout:{
