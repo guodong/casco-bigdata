@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery.min.js"></script>
+<script src="Chart.min.js"></script>
+<title>智能分析</title>
+</head>
+<body>
+
+			<img src="casco.jpg" width="80" height="40" align="right" style="position: absolute; top:0;right:0">
+			<p align="center"><b style="font-size: 24px">监测数据分析报告</b></p>');
+	<script type="text/javascript">
+		function showresult(data) {
+			var index = 1;
+			$("body").append('<p align="center"><b>' + data.title + '</b></p>');
+			$("body")
+					.append(
+							'<canvas id="myChart'+index+'"></canvas>');
+			$("body").append('<p><p><p>');
+			var d = [{
+				value: data.exp_num,
+				color: "#F7464A",
+				highlight: "#FF5A5E",
+				label: "Red"
+			}, {
+				value: data.total-data.exp_num,
+				color: "#46BFBD",
+				highlight: "#5AD3D1",
+				label: "Green"
+			}]
+			var ctx = $("#myChart"+index).get(0).getContext("2d");
+			var myPieChart = new Chart(ctx[0]).Pie(d);
+
+			index++;
+		}
+		$(function() {
+			var data = JSON.parse(localStorage.allrizhi).results;
+
+			for ( var i in data) {
+				showresult(data[i]);
+			}
+		});
+	</script>
+</body>
+</html>

@@ -878,14 +878,16 @@ $include-ext-view-view: dynamic(true);;
 $include-ext-window-messagebox: dynamic(true);;
 $include-ext-window-toast: dynamic(true);;
 $include-ext-window-window: dynamic(true);;
-$include-myapp-view-analysis-dqtx: dynamic(true);;
-$include-myapp-view-result-report: dynamic(true);;
 $include-bigdata-application: dynamic(true);;
 $include-bigdata-store-personnel: dynamic(true);;
+$include-bigdata-view-analysis-dqtx: dynamic(true);;
+$include-bigdata-view-analysis-rizhi: dynamic(true);;
 $include-bigdata-view-main-list: dynamic(true);;
 $include-bigdata-view-main-main: dynamic(true);;
 $include-bigdata-view-main-maincontroller: dynamic(true);;
 $include-bigdata-view-main-mainmodel: dynamic(true);;
+$include-bigdata-view-result-graph: dynamic(true);;
+$include-bigdata-view-result-report: dynamic(true);;
 $output-paths: ("path": "../../classic/resources", "shared": "../../resources");
 
 /* ======================== ETC ======================== */

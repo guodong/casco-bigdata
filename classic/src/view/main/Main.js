@@ -33,7 +33,7 @@ Ext.define('bigdata.view.main.Main', {
         },
         title: {
             bind: {
-                text: '{name}'
+                text: 'CASCO Bigdata'
             },
             flex: 0
         },
@@ -78,9 +78,7 @@ Ext.define('bigdata.view.main.Main', {
     items: [{
         title: 'Home',
         iconCls: 'fa-home',
-        items: [{
-            xtype: 'mainlist'
-        }]
+        html: '<iframe id="frame_main" src="http://hadoop:50070/dfshealth.jsp" width="100%" height="100%"></iframe>'
     }, {
         title: 'Analysis',
         iconCls: 'fa-user',
@@ -88,6 +86,9 @@ Ext.define('bigdata.view.main.Main', {
         items: [{
         	xtype: 'analysis.dqtx',
         	title:'电气特性长期跟踪',
+        }, {
+        	xtype: 'analysis.rizhi',
+        	title:'日志文件分析',
         }]
     }, {
         title: '分析结果',
