@@ -90,7 +90,7 @@ Ext.define('bigdata.view.analysis.Rizhi', {
 				xtype: 'button',
 				text: '查看全部报告',
 				handler: function() {
-					var graph = Ext.create('bigdata.view.result.Graph', {type: 'rizhiall'});
+					var graph = Ext.create('bigdata.view.result.Graph', {type: 'rzall'});
 					graph.show();
 				}
 			}],

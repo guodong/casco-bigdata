@@ -13,11 +13,11 @@
 			<img hidefocus="true" src="casco.jpg" width="80" height="40" align="right" style="position: absolute; top:0;right:0">
 			<p align="center"><b style="font-size: 24px">监测数据分析报告</b></p>
 			<p align="center"><b>报警比例图</b></p>
-			<canvas id="myPieChart"></canvas>
+			<p align="center"><canvas id="myPieChart"></canvas></p>
 			<p><p><p>
 	<script type="text/javascript">
+		var index = 1;
 		function showresult(data) {
-			var index = 1;
 			$("body").append('<p align="center"><b>' + data.title + '</b></p>');
 			$("body").append('<p align="center">' + data.dsp + '</p>');
 			$("body")
