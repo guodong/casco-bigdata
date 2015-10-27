@@ -887,6 +887,7 @@ $include-bigdata-view-main-main: dynamic(true);;
 $include-bigdata-view-main-maincontroller: dynamic(true);;
 $include-bigdata-view-main-mainmodel: dynamic(true);;
 $include-bigdata-view-result-graph: dynamic(true);;
+$include-bigdata-view-result-history: dynamic(true);;
 $include-bigdata-view-result-report: dynamic(true);;
 $output-paths: ("path": "../../classic/resources", "shared": "../../resources");
 

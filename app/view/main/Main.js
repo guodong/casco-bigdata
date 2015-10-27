@@ -95,7 +95,7 @@ Ext.define('bigdata.view.main.Main', {
         iconCls: 'fa-users',
         xtype: 'tabpanel',
         items: [{
-        	xtype: 'result.report',
+        	xtype: 'result.history',
         	title:'分析结果',
         }]
     }, {

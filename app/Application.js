@@ -14,6 +14,7 @@ Ext.define('bigdata.Application', {
     
     launch: function () {
         // TODO - Launch the application
+    	Ext.Ajax.setTimeout(1200000);
     },
 
     onAppUpdate: function () {
